@@ -9,10 +9,11 @@ public class Evaluativo_01 {
     public static void Menu() {
 
         String opcion = "0";
-        while (!opcion.equals("5")) {
+        while (!opcion.equals("7")) {
 
-            System.out.println("BIENVENIDOS\n1.Agregar\n2.Listar\n3.Consultar\n4.Eliminar\n5.Salir");
-            System.out.println("Ingrese un valor numérico entre 1 y 5");
+            System.out.println("------------ BIENVENIDOS ------------\n -- Parte I - CRUD CON LISTAS --\n\n1.Agregar\n2.Listar\n3.Consultar\n4.Eliminar\n\n" +
+                    " -- Parte II - JUEGOS --\n5.Adivinar un número\n6.Cuentas bancarias\n7.Salir");
+            System.out.println("\nIngrese un valor numérico entre 1 y 7 > ");
 
             opcion = lea.next();
             boolean bandera = ValidarOpcion(opcion);
@@ -21,7 +22,7 @@ public class Evaluativo_01 {
                     case "1":
                         Agregar();
                         break;
-                    case "5":
+                    case "7":
                         System.out.println("Hasta luego");
                         System.exit(0);
 
